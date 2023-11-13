@@ -4,7 +4,7 @@ from bson import json_util
 
 
 app=Flask(__name__) #Crea una instancia de una aplicacion
-app.config['MONGO_URI']='mongodb://databaseflights:27017/Tripster_Flights_Database'
+app.config['MONGO_URI']='mongodb://host.docker.internal:27017/admin'
 
 mongo=PyMongo(app) #Se obtiene coneccion a base de datos
 
