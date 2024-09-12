@@ -1,0 +1,16 @@
+query {
+ FlightByOrigDest(origin:"Aeropuerto Internacional El Dorado",destination:"Aeropuerto Internacional José María Córdova"){
+  airport_origin{airport_origin_name,_id}
+  flight_airline
+  flight_seat_class
+  
+}
+}
+
+mutation {
+ createCountry(country_name: {
+ 	country_name: "Rumania"
+ }) {
+ country_name
+ }
+}
